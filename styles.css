@@ -14,7 +14,7 @@ body {
 
 section#verify {
   box-sizing: border-box;
-  padding: 70px 34px 31px;
+  padding: 71px 34px 31px;
   width: 575px;
   background: #fff;
   border-radius: 10px;
@@ -40,13 +40,31 @@ section#verify p.verify__instruction {
 section#verify .verify__input-fields {
   display: flex;
   flex-direction: row;
-  gap: 21px;
-  margin: 44px;
+  justify-content: space-between;
+  /* gap: 21px; */
+  margin: 44px 58px;
+}
+
+/* Hide number input spinners in Webkit browsers */
+section#verify .verify__input-fields input::-webkit-outer-spin-button,
+section#verify .verify__input-fields input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners in Mozilla */
+section#verify .verify__input-fields input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 section#verify .verify__input-fields .input-field__single-digit {
   width: 82px;
-  height: 86px;
+  height: 83px;
+  color: #6778e8;
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 75px;
   background: #f0f3fa;
   border: none;
   border-radius: 5px;
@@ -54,7 +72,7 @@ section#verify .verify__input-fields .input-field__single-digit {
 }
 
 button.input__btn-primary {
-  padding: 25px;
+  padding: 26px;
   width: 100%;
   text-align: center;
   background: linear-gradient(93.32deg, #8d9eff -10.93%, #a674fb 113.82%);
