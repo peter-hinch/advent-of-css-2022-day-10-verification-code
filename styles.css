@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: 'Source Sans Pro', sans-serif;
   background: #e3e9f9;
+}
+
+section#verify {
+  box-sizing: border-box;
+  padding: 70px 34px 31px;
+  width: 575px;
+  background: #fff;
 }

@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advent of CSS 2022 - Day 10 - Verification Code</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section id="verify">
+        <h2>Authorization Code</h2>
+        <p>Please enter the code that we sent to (***) *** - 2819.</p>
+        <div class="verify__input-fields">
+          <input type="number" />
+          <input type="number" />
+          <input type="number" />
+          <input type="number" />
+        </div>
+        <button>Verify</button>
+      </section>
+    </main>
+  </body>
 </html>
