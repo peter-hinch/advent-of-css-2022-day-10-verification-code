@@ -7,6 +7,8 @@ body {
   align-items: center;
   height: 100vh;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
   background: #e3e9f9;
 }
 
@@ -15,4 +17,56 @@ section#verify {
   padding: 70px 34px 31px;
   width: 575px;
   background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 23px 44px #cad0e0;
+}
+
+section#verify h2.verify__heading {
+  margin: 0 0 12px;
+  color: #6778e8;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+section#verify p.verify__instruction {
+  margin: 0;
+  text-align: center;
+  color: #737580;
+}
+
+section#verify .verify__input-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  margin: 44px;
+}
+
+section#verify .verify__input-fields .input-field__single-digit {
+  width: 82px;
+  height: 86px;
+  background: #f0f3fa;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+
+button.input__btn-primary {
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(93.32deg, #8d9eff -10.93%, #a674fb 113.82%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.input__btn-primary .btn-primary__text {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }

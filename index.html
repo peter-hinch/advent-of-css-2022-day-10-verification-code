@@ -11,15 +11,19 @@
   <body>
     <main>
       <section id="verify">
-        <h2>Authorization Code</h2>
-        <p>Please enter the code that we sent to (***) *** - 2819.</p>
+        <h2 class="verify__heading">Authorization Code</h2>
+        <p class="verify__instruction">
+          Please enter the code that we sent to (***) *** - 2819.
+        </p>
         <div class="verify__input-fields">
-          <input type="number" />
-          <input type="number" />
-          <input type="number" />
-          <input type="number" />
+          <input type="number" class="input-field__single-digit" />
+          <input type="number" class="input-field__single-digit" />
+          <input type="number" class="input-field__single-digit" />
+          <input type="number" class="input-field__single-digit" />
         </div>
-        <button>Verify</button>
+        <button class="input__btn-primary">
+          <span class="btn-primary__text">Verify</span>
+        </button>
       </section>
     </main>
   </body>
